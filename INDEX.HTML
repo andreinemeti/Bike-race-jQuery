@@ -1,0 +1,38 @@
+<html>
+   <head>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>cyclist Racing Game In jQuery</title>
+   </head>
+   <body>
+      <div id="message-info">
+         <div id="msg-added-steroids">
+            <p>Steroids were injected in the cyclist's buttocks <i class="fa fa-check" aria-hidden="true"></i></p>
+         </div>
+         <div id="msg-removed-steroids">
+            <p>The cyclist's buttocks are now steroid free!</p>
+         </div>
+      </div>
+      <input type="button" value="RACE" id="race">
+      <input type="button" value="RESET" id="Reset">
+      <div id="counter">
+      </div>
+      <div id="scoreboard">
+         <h2>Results</h2>
+         <div id="RaceInfo1" class="RaceInfo">CYCLIST 1 <span></span>
+         </div>
+         <div id="RaceInfo2" class="RaceInfo">CYCLIST 2 <span></span>
+         </div>
+      </div>
+      <div id="steroids">
+         <button id="addsteroids" type="button">Add Steroids</button>
+         <button id="removesteroids" type="button">Remove Steroids</button>
+      </div>
+      <div id="RaceTrack">
+         <img id="cyclist1" class="cyclist" src="img/bike1wait.png" width="110px" alt="Green cyclist">
+         <img id="cyclist2" class="cyclist" src="img/bike2wait.png" width="110px" alt="Red cyclist">
+      </div>
+      <script type="text/javascript" src="script.js"></script>
+   </body>
+</html>

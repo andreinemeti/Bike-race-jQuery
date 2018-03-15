@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+
+}
+@keyframes ready {
+    10% {
+        background: url("img/3.png") center no-repeat;
+        background-size: 50%;
+    }
+    40% {
+        background: url("img/2.png") center no-repeat;
+        background-size: 50%;
+    }
+    70% {
+        background: url("img/1.png") center no-repeat;
+        background-size: 50%;
+    }
+    100% {
+        background: url("img/race.png") no-repeat;
+        background-size: 100%;
+    }
+}
+#counter {
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:250px;
+    margin: auto;
+    z-index: 16;
+    animation-duration: 5s;
+}
+body {
+    text-align: center;
+    background: url("img/clouds.jpg") #272727;
+    background-size:cover;
+}
+h1 {
+    background: black;
+    color: white;
+    margin-bottom: 10px;
+}
+#RaceTrack {
+    box-sizing: border-box;
+    background: url(road.jpg) center #272727;
+    position: relative;
+    height: 230px;
+    margin: 0;
+    position:absolute;
+    bottom:0;
+    z-index:50;
+    width:100%;
+    border-right: dashed 7px white;
+}
+.cyclist {
+
+    display: block;
+    position: relative;
+}
+#cyclist1 {
+
+    top: 5px;
+    position: absolute;
+}
+#cyclist2 {
+
+    top: 115px;
+    position: absolute;
+}
+
+#scoreboard {
+    position:relative;
+    width: 70%;
+    margin: 10px auto;
+    background: black;
+    height: 250px;
+}
+#scoreboard h2 {
+    color: white;
+    text-transform: uppercase;
+    border-bottom: solid 1px white;
+    padding: 20px 0;
+}
+
+#steroids {
+    width:100%;
+    margin: 10px auto 0 auto;
+}
+#addsteroids,
+#removesteroids {
+    border: none;
+    background: #E12323;
+    padding: 15px;
+    position:relative;
+    color: white;
+    cursor: pointer;
+    z-index: 116;
+}
+
+#removesteroids {
+    background: #20BC5E;
+}
+#message-info {
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 300px;
+    width: 250px;
+    color: white;
+}
+#msg-added-steroids,
+#msg-removed-steroids {
+    height: 100px;
+    width: 150px;
+    display: none;
+    background: #E12323;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 5px;
+}
+#msg-removed-steroids {
+    background: #42C175;
+}
+#msg-added-steroids p,
+#msg-removed-steroids p {
+    margin: 20% auto;
+}
+.RaceInfo {
+    margin-top:20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    float: left;
+}
+.RaceInfo span {
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+}
+#RaceInfo1 {
+    color: #B82F3E;
+}
+#RaceInfo1 span {
+    border-right: 1px solid white;
+}
+#RaceInfo2 {
+    color: #EA9721;
+}
+input[type="button"] {
+    margin-top: 20px;
+    background: #C94A2D;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    position:relative;
+    z-index:1000;
+}
+input[type="button"]:hover {
+    filter: brightness(.9);
+}
+input#Reset {
+    background: #fc3;
+    color: #444;
+}
+@media all and (max-width: 480px) {
+    #scoreboard {
+        width: 100%;
+        height: 200px;
+        font-size: 12px;
+    }
+    #scoreboard span {
+        font-size: 14px;
+    }
+    #steroids {
+        width: 100%;
+    }
+
+    .cyclist {
+        width: 80px;
+    }
+
+    input[type="button"] {
+        margin-top:5px;
+    }
+}
+
+@media all and (max-height:600px) and (orientation: landscape) {
+#RaceTrack {
+position:static;
+}
+
+#cyclist1 {
+    position:relative;
+    bottom:0;
+}
+
+#cyclist2 {
+       position:relative;
+       top:1rem;
+}
+}
